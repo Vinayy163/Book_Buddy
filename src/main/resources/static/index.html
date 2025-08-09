@@ -11,6 +11,27 @@
   <div class="container">
     <h1>📚 BookBuddy Catalog</h1>
     <input type="text" id="search" placeholder="Search by title or author...">
+    <div class="genre-filters">
+      <button class="genre-btn active" data-genre="All">All</button>
+      <button class="genre-btn" data-genre="Fiction">Fiction</button>
+      <button class="genre-btn" data-genre="Romance">Romance</button>
+      <button class="genre-btn" data-genre="Sci-Fi">Sci-Fi</button>
+      <button class="genre-btn" data-genre="Mistery">Mistery</button>
+      <button class="genre-btn" data-genre="Self-Help">Self-Help</button>
+
+      <button id="open-sidebar">More Genre ☰</button>
+    </div>
+    <div id="genre-sidebar">
+      <button id="close-sidebar">❌</button>
+      <h3>More Genre</h3>
+      <ul>
+          <li><button class="genre-btn" data-genre="Programming">Programming</button></li>
+          <li><button class="genre-btn" data-genre="Finance">Finance</button></li>
+          <li><button class="genre-btn" data-genre="Classic">Classic</button></li>
+          <li><button class="genre-btn" data-genre="Business">Business</button></li>
+          <li><button class="genre-btn" data-genre="Others">Others</button></li>
+      </ul>
+    </div>
     <div id="bookList" class="grid"></div>
   </div>
   
